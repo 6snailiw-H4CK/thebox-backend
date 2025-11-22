@@ -3,7 +3,7 @@ const _0x1ab57b=_0x156a;(function(_0x58284e,_0x245c01){const _0x217449=_0x156a,_
   try {
     const allowedHosts = [
       // AJUSTE AQUI PARA OS SEUS DOMÍNIOS
-      'thebox-control.netlify.app',
+      'controle-box.netlify.app',
       '6snailiw-H4CK.github.io',
       'localhost',
       '127.0.0.1'
