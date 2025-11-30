@@ -13,6 +13,17 @@ app.use(cors());
 app.use(express.json());
 
 // ===============================
+// ROTA DE HEALTH CHECK
+// ===============================
+app.get('/', (req, res) => {
+  res.json({ status: '✅ Backend THE BOX rodando!', version: '1.0' });
+});
+
+app.get('/api/health', (req, res) => {
+  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+});
+
+// ===============================
 // ROTA PARA DEEPSEEK
 // ===============================
 app.post('/api/ai/assistant', async (req, res) => {
