@@ -15,6 +15,7 @@ app.use(express.json());
 // ===============================
 // ROTA DE HEALTH CHECK
 // ===============================
+// lightweight health endpoints for Render and monitoring
 app.get('/', (req, res) => {
   res.json({ status: '✅ Backend THE BOX rodando!', version: '1.0' });
 });
